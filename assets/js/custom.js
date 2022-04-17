@@ -1,4 +1,7 @@
-AOS.init();
+window.onload = function() {
+  const el = document.getElementById('overlay');
+  el.style.display = 'none';
+};
 const currentLocation = location.href;
 const navItem = document.querySelectorAll('.nav-link');
 const navItemLength = navItem.length;
@@ -21,8 +24,3 @@ window.addEventListener('scroll', (event) => {
     burgerWhite.style.display = 'block'
   }
 })
-
-window.onload = function() {
-  const el = document.getElementById('overlay');
-  el.style.display = 'none';
-};
