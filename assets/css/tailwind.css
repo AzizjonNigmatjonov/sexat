@@ -619,30 +619,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 40px;
 }
 
-.left-\[-60px\] {
-  left: -60px;
-}
-
-.-top-\[60px\] {
-  top: -60px;
-}
-
-.top-\[60px\] {
-  top: 60px;
-}
-
-.top-\[-60px\] {
-  top: -60px;
-}
-
-.top-\[-50px\] {
-  top: -50px;
-}
-
-.left-\[-50px\] {
-  left: -50px;
-}
-
 .z-\[9\] {
   z-index: 9;
 }
@@ -784,8 +760,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 30px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[2px\] {
   height: 2px;
+}
+
+.h-\[440px\] {
+  height: 440px;
 }
 
 .min-h-\[100vh\] {
@@ -880,6 +864,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -980,6 +972,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(10px * var(--tw-space-x-reverse));
   margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-\[\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc( * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc( * var(--tw-space-y-reverse));
+}
+
+.space-y-\[10px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1092,11 +1096,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-\[\#030A1B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 10 27 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-\[0\.06\] {
   --tw-bg-opacity: 0.06;
 }
@@ -1133,14 +1132,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-\[15px\] {
   padding: 15px;
-}
-
-.p-\[10px\] {
-  padding: 10px;
-}
-
-.p-\[30px\] {
-  padding: 30px;
 }
 
 .p-\[24px\] {
@@ -1435,14 +1426,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:left-\[-40px\] {
-    left: -40px;
-  }
-
-  .sm\:top-\[-40px\] {
-    top: -40px;
-  }
-
   .sm\:mt-\[30px\] {
     margin-top: 30px;
   }
@@ -1489,6 +1472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:justify-between {
@@ -1676,9 +1663,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: calc(70px * var(--tw-space-x-reverse));
     margin-left: calc(70px * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .xl\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .xl\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-\[36px\] {
+    font-size: 36px;
+  }
+
   .\32xl\:text-\[24px\] {
     font-size: 24px;
   }
