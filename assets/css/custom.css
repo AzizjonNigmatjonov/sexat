@@ -388,6 +388,18 @@ footer a:hover {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .main-contents-wrapper-about {
+    background-image: url("../images/about/main-img-back.png");
+  }
+  .main-contents-wrapper-service {
+    background-image: url("../images/service/main-img-back.png");
+  }
+  .main-contents-wrapper-gallery {
+    background-image: url("../images/gallery/main-img-back.png");
+  }
+  .main-contents-wrapper-contact {
+    background-image: url("../images/contact/main-img-back.png");
+  }
   .title {
     font-size: 36px;
   }

@@ -19,304 +19,306 @@
 <body>
 
   <div id="header"
-    uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#51648E] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
-    class="navbar uk-sticky">
-    <header class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]">
-      <div class="uk-container uk-container-large">
-        <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
-          <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
-            <a href="index.html">
-              <img class="uk-animation-fade w-[100px]" src="../assets/images/icons/logo.svg" alt="Logo">
-            </a>
-          </div>
+  uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#51648E] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
+  class="navbar uk-sticky">
+  <header class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]">
+    <div class="uk-container uk-container-large">
+      <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
+        <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
+          <a href="index.html">
+            <img class="uk-animation-fade w-[100px]" src="../assets/images/icons/logo.svg" alt="Logo">
+          </a>
+        </div>
 
-          <div class="uk-navbar-right">
-            <div class="uk-hidden@l uk-first-column">
-              <div class="text-[#1d1d1b]">
-                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link"
-                  aria-expanded="false">
-                  <svg width="49" height="41" viewBox="0 0 49 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="15" height="3" fill="#171A63" />
-                    <rect x="10" y="19" width="29" height="3" fill="#171A63" />
-                    <rect x="24" y="28" width="15" height="3" fill="#171A63" />
-                  </svg>
-                </a>
-              </div>
+        <div class="uk-navbar-right">
+          <div class="uk-hidden@l uk-first-column">
+            <div class="text-[#1d1d1b]">
+              <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link"
+                aria-expanded="false">
+                <svg width="49" height="41" viewBox="0 0 49 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="10" width="15" height="3" fill="#171A63" />
+                  <rect x="10" y="19" width="29" height="3" fill="#171A63" />
+                  <rect x="24" y="28" width="15" height="3" fill="#171A63" />
+                </svg>
+              </a>
+            </div>
 
-              <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
-                <div class="uk-offcanvas-bar">
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
+              <div class="uk-offcanvas-bar">
 
-                  <div class="uk-flex uk-flex-right">
-                    <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                          d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
-                        </path>
-                      </svg>
-                      <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
-                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
-                      </svg></button>
-                  </div>
-
-                  <ul
-                    class="mt-[20px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
-                    uk-grid=""
-                    uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
-                    <li class="uk-flex uk-flex-right">
-                      <a href="index.html" class="font-400 animBottom" style="visibility: hidden;">
-                        Bosh sahifa
-                      </a>
-                    </li>
-                    <div>
-                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                    </div>
-                    <li class="uk-flex uk-flex-right">
-                      <a href="about.html" class="font-400 animBottom" style="visibility: hidden;">
-                        Biz haqimizda
-                      </a>
-                    </li>
-                    <div>
-                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                    </div>
-                    <li class="uk-flex uk-flex-right">
-                      <a href="service.html" class="font-400 animBottom" style="visibility: hidden;">
-                        Xizmatlarimiz
-                      </a>
-                    </li>
-                    <div>
-                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                    </div>
-                    <li class="uk-flex uk-flex-right">
-                      <a href="gallery.html" class="font-400 animBottom" style="visibility: hidden;">
-                        Galereya
-                      </a>
-                    </li>
-                    <li class="uk-flex uk-flex-right">
-                      <a href="contact.html" class="font-400 animBottom" style="visibility: hidden;">
-                        Kontaktlar
-                      </a>
-                    </li>
-                    <div>
-                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                    </div>
-                    <li class="uk-flex uk-flex-right">
-                      <ul class="uk-grid-small uk-flex-middle uk-grid uk-grid-stack" uk-grid="">
-                        <li class="text-[#fff]">
-                          <a href="#" class="text-[#fff] font-400 hover-link animBottom"
-                            style="visibility: hidden;">UZ</a>
-                        </li>
-                        <li>
-                          <hr class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
-                        </li>
-                        <li class="text-[#fff]">
-                          <a href="#" class="text-[#fff] font-400 hover-link animBottom"
-                            style="visibility: hidden;">RU</a>
-                        </li>
-                        <li>
-                          <hr class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
-                        </li>
-                        <li class="text-[#fff]">
-                          <a href="#" class="text-[#fff] font-400 hover-link animBottom"
-                            style="visibility: hidden;">EN</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                <div class="uk-flex uk-flex-right">
+                  <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                      </path>
+                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                      <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
                 </div>
+
+                <ul
+                  class="mt-[20px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                  uk-grid=""
+                  uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
+                  <li class="uk-flex uk-flex-right">
+                    <a href="index.html" class="font-400 animBottom" style="visibility: hidden;">
+                      Bosh sahifa
+                    </a>
+                  </li>
+                  <div>
+                    <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                  </div>
+                  <li class="uk-flex uk-flex-right">
+                    <a href="about.html" class="font-400 animBottom" style="visibility: hidden;">
+                      Biz haqimizda
+                    </a>
+                  </li>
+                  <div>
+                    <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                  </div>
+                  <li class="uk-flex uk-flex-right">
+                    <a href="service.html" class="font-400 animBottom" style="visibility: hidden;">
+                      Xizmatlarimiz
+                    </a>
+                  </li>
+                  <div>
+                    <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                  </div>
+                  <li class="uk-flex uk-flex-right">
+                    <a href="gallery.html" class="font-400 animBottom" style="visibility: hidden;">
+                      Galereya
+                    </a>
+                  </li>
+                  <div>
+                    <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                  </div>
+                  <li class="uk-flex uk-flex-right">
+                    <a href="contact.html" class="font-400 animBottom" style="visibility: hidden;">
+                      Kontaktlar
+                    </a>
+                  </li>
+                  <div>
+                    <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                  </div>
+                  <li class="uk-flex uk-flex-right">
+                    <ul class="uk-grid-small uk-flex-middle uk-grid uk-grid-stack" uk-grid="">
+                      <li class="text-[#fff]">
+                        <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                          style="visibility: hidden;">UZ</a>
+                      </li>
+                      <li>
+                        <hr class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                      </li>
+                      <li class="text-[#fff]">
+                        <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                          style="visibility: hidden;">RU</a>
+                      </li>
+                      <li>
+                        <hr class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                      </li>
+                      <li class="text-[#fff]">
+                        <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                          style="visibility: hidden;">EN</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div>
-              <div class="text-[#1d1d1b]">
-                <a href="#modal-full" id="modalFull" uk-toggle class="uk-visible@l">
-                  <img class="navbar__burger burgerWhite" src="../assets/images/icons/burger-white.svg" alt="img">
-                  <img class="navbar__burger burgerBlack" src="../assets/images/icons/burger.svg" alt="img">
-                </a>
-                <div id="modal-full" class="uk-modal-full" uk-modal>
-                  <div class="uk-modal-dialog">
-                    <div class="uk-close-large">
-                      <button class="uk-modal-close-full uk-close-large" type="button" uk-close>
-                        <svg width="50" height="50" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                          <line fill="none" stroke="#fff" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
-                          <line fill="none" stroke="#fff" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                      <div class="uk-background-cover"
-                        style="background-image: url('../assets/images/main/navbar.png');" uk-height-viewport></div>
-                      <div class="px-[100px] navigation">
-                        <div>
-                          <a href="index.html">
-                            <img src="../assets/images/icons/logo.svg" alt="icon">
-                          </a>
-                          <div class="uk-child-width-1-2 mt-[50px]" uk-grid>
-                            <div>
-                              <ul class="navigation__list space-y-[24px]">
-                                <li>
-                                  <a href="index.html" class="line-animation nav-link">
-                                    Bosh sahifa
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="about.html" class="line-animation nav-link">
-                                    Biz haqimizda
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="service.html" class="line-animation nav-link">
-                                    Xizmatlarimiz
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="gallery.html" class="line-animation nav-link">
-                                    Galereya
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="contact.html" class="line-animation nav-link">
-                                    Kontaktlar
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                            <div>
-                              <div class="uk-inline fade">
-                                <button
-                                  class="uk-button bg-[#171A63] rounded-[40px] text-[#fff] flex items-center space-x-[8px] py-[5px]"
-                                  type="button">
-                                  <img src="../assets/images/icons/globus.svg" alt="globus">
-                                  <span>Uzbek</span>
-                                  <img src="../assets/images/icons/small-arrow-bottom.svg" alt="arrow">
-                                </button>
-                                <div uk-dropdown="mode: click" class="rounded-[20px]"
-                                  style="min-width: 80px; width: 100%;">
-                                  <ul class="flex flex-col items-center space-y-[12px]">
-                                    <li>
-                                      <a href="#" class="text-[#171A63] text-[18px] font-medium">
-                                        RU
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#" class="text-[#171A63] text-[18px] font-medium">
-                                        UZ
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <ul class="mt-[20px] items-center socials__list flex flex-col rotate-90">
-                                <li>
-                                  <a href="#" class="group">
-                                    <div
-                                      class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#fff]">
-                                      <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="24"
-                                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                          d="M12.2651 2C14.9821 2 15.3211 2.01 16.3871 2.06C17.4521 2.11 18.1771 2.277 18.8151 2.525C19.4751 2.779 20.0311 3.123 20.5871 3.678C21.0956 4.1779 21.4891 4.78259 21.7401 5.45C21.9871 6.087 22.1551 6.813 22.2051 7.878C22.2521 8.944 22.2651 9.283 22.2651 12C22.2651 14.717 22.2551 15.056 22.2051 16.122C22.1551 17.187 21.9871 17.912 21.7401 18.55C21.4898 19.2178 21.0963 19.8226 20.5871 20.322C20.0871 20.8303 19.4824 21.2238 18.8151 21.475C18.1781 21.722 17.4521 21.89 16.3871 21.94C15.3211 21.987 14.9821 22 12.2651 22C9.54814 22 9.20914 21.99 8.14314 21.94C7.07814 21.89 6.35314 21.722 5.71514 21.475C5.04746 21.2245 4.44266 20.8309 3.94314 20.322C3.43454 19.8222 3.04107 19.2175 2.79014 18.55C2.54214 17.913 2.37514 17.187 2.32514 16.122C2.27814 15.056 2.26514 14.717 2.26514 12C2.26514 9.283 2.27514 8.944 2.32514 7.878C2.37514 6.812 2.54214 6.088 2.79014 5.45C3.04037 4.78218 3.43394 4.17732 3.94314 3.678C4.44281 3.16923 5.04756 2.77573 5.71514 2.525C6.35314 2.277 7.07714 2.11 8.14314 2.06C9.20914 2.013 9.54814 2 12.2651 2ZM12.2651 7C10.9391 7 9.66728 7.52678 8.7296 8.46447C7.79192 9.40215 7.26514 10.6739 7.26514 12C7.26514 13.3261 7.79192 14.5979 8.7296 15.5355C9.66728 16.4732 10.9391 17 12.2651 17C13.5912 17 14.863 16.4732 15.8007 15.5355C16.7384 14.5979 17.2651 13.3261 17.2651 12C17.2651 10.6739 16.7384 9.40215 15.8007 8.46447C14.863 7.52678 13.5912 7 12.2651 7ZM18.7651 6.75C18.7651 6.41848 18.6334 6.10054 18.399 5.86612C18.1646 5.6317 17.8467 5.5 17.5151 5.5C17.1836 5.5 16.8657 5.6317 16.6313 5.86612C16.3968 6.10054 16.2651 6.41848 16.2651 6.75C16.2651 7.08152 16.3968 7.39946 16.6313 7.63388C16.8657 7.8683 17.1836 8 17.5151 8C17.8467 8 18.1646 7.8683 18.399 7.63388C18.6334 7.39946 18.7651 7.08152 18.7651 6.75ZM12.2651 9C13.0608 9 13.8238 9.31607 14.3865 9.87868C14.9491 10.4413 15.2651 11.2044 15.2651 12C15.2651 12.7956 14.9491 13.5587 14.3865 14.1213C13.8238 14.6839 13.0608 15 12.2651 15C11.4695 15 10.7064 14.6839 10.1438 14.1213C9.58121 13.5587 9.26514 12.7956 9.26514 12C9.26514 11.2044 9.58121 10.4413 10.1438 9.87868C10.7064 9.31607 11.4695 9 12.2651 9Z" />
-                                      </svg>
-
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" class="group">
-                                    <div
-                                      class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#229ED9]">
-                                      <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="24"
-                                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                          d="M12.2651 22C6.74214 22 2.26514 17.523 2.26514 12C2.26514 6.477 6.74214 2 12.2651 2C17.7881 2 22.2651 6.477 22.2651 12C22.2651 17.523 17.7881 22 12.2651 22ZM9.15514 13.17L9.16814 13.163L10.0381 16.033C10.1501 16.344 10.3041 16.4 10.4911 16.374C10.6791 16.349 10.7781 16.248 10.9011 16.13L12.0891 14.982L14.6391 16.87C15.1051 17.127 15.4401 16.994 15.5561 16.438L17.2131 8.616C17.3961 7.888 17.0761 7.596 16.5111 7.828L6.77814 11.588C6.11414 11.854 6.11814 12.226 6.65814 12.391L9.15514 13.171V13.17Z" />
-                                      </svg>
-
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#" class="group">
-                                    <div
-                                      class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#4267B2]">
-                                      <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="25"
-                                        viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                          d="M14.0884 14.3232H16.5884L17.5884 10.3232H14.0884V8.32324C14.0884 7.29324 14.0884 6.32324 16.0884 6.32324H17.5884V2.96324C17.2624 2.92024 16.0314 2.82324 14.7314 2.82324C12.0164 2.82324 10.0884 4.48024 10.0884 7.52324V10.3232H7.08838V14.3232H10.0884V22.8232H14.0884V14.3232Z" />
-                                      </svg>
-                                    </div>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="flex items-center space-x-[40px]">
-                            <a href="#" class="text-[#171A63] text-[22px]">Aloqaga
-                              chiqish</a>
-                            <a href="#" class="text-[#171A63] text-[22px]">Qabulga
-                              yozilish</a>
-                          </div>
-                          <div class="mt-[50px]">
-                            <p class="text-[#F03D69] font-medium text-sm uppercase">BIZ
-                              QAYERDA JOYLASHGANMIZ</p>
-                            <a href="#" class="text-xl font-medium text-[#171A63] mt-[4px]">
-                              Toshkent shahar Chillonzor tumani 25 daha 30 uy da
-                              joylashgan
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas uk-hidden">
-                <div class="uk-offcanvas-bar mobile-navbar">
-                  <div class="uk-flex uk-flex-right">
-                    <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                          d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
-                        </path>
+          </div>
+          <div>
+            <div class="text-[#1d1d1b]">
+              <a href="#modal-full" id="modalFull" uk-toggle class="uk-visible@l">
+                <img class="navbar__burger burgerWhite" src="../assets/images/icons/burger-white.svg" alt="img">
+                <img class="navbar__burger burgerBlack" src="../assets/images/icons/burger.svg" alt="img">
+              </a>
+              <div id="modal-full" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog">
+                  <div class="uk-close-large">
+                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close>
+                      <svg width="50" height="50" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#fff" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#fff" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
                       </svg>
-                      <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
-                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
-                      </svg></button>
+                    </button>
                   </div>
-
-                  <div class="bg-[#fff] content-wrapper">
-                    <div class="uk-padding-large">
-                      <div class="uk-padding-large">
+                  <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                    <div class="uk-background-cover"
+                      style="background-image: url('../assets/images/main/navbar.png');" uk-height-viewport></div>
+                    <div class="px-[100px] navigation">
+                      <div>
                         <a href="index.html">
-                          <img src="../assets/images/icons/logo.svg" alt="logo">
+                          <img src="../assets/images/icons/logo.svg" alt="icon">
                         </a>
-                        <div>
-                          <div class="uk-margin-large-top">
-                            <ul class="flex flex-col">
+                        <div class="uk-child-width-1-2 mt-[50px]" uk-grid>
+                          <div>
+                            <ul class="navigation__list space-y-[24px]">
                               <li>
-                                <a href="index.html">Bosh sahifa</a>
+                                <a href="index.html" class="line-animation nav-link">
+                                  Bosh sahifa
+                                </a>
                               </li>
                               <li>
-                                <a href="index.html">Biz haqimizda</a>
+                                <a href="about.html" class="line-animation nav-link">
+                                  Biz haqimizda
+                                </a>
                               </li>
                               <li>
-                                <a href="index.html">Xizmatlarimiz</a>
+                                <a href="service.html" class="line-animation nav-link">
+                                  Xizmatlarimiz
+                                </a>
                               </li>
                               <li>
-                                <a href="gallery.html">Galereya</a>
+                                <a href="gallery.html" class="line-animation nav-link">
+                                  Galereya
+                                </a>
                               </li>
                               <li>
-                                <a href="index.html">Kontaktlar</a>
+                                <a href="contact.html" class="line-animation nav-link">
+                                  Kontaktlar
+                                </a>
                               </li>
                             </ul>
                           </div>
-                          <div class="uk-inline fade">
-                            <button class="uk-button uk-button-default" type="button">Click</button>
-                            <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit, sed do eiusmod tempor
-                              incididunt.</div>
+                          <div>
+                            <div class="uk-inline fade">
+                              <button
+                                class="uk-button bg-[#171A63] rounded-[40px] text-[#fff] flex items-center space-x-[8px] py-[5px]"
+                                type="button">
+                                <img src="../assets/images/icons/globus.svg" alt="globus">
+                                <span>Uzbek</span>
+                                <img src="../assets/images/icons/small-arrow-bottom.svg" alt="arrow">
+                              </button>
+                              <div uk-dropdown="mode: click" class="rounded-[20px]"
+                                style="min-width: 80px; width: 100%;">
+                                <ul class="flex flex-col items-center space-y-[12px]">
+                                  <li>
+                                    <a href="#" class="text-[#171A63] text-[18px] font-medium">
+                                      RU
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="text-[#171A63] text-[18px] font-medium">
+                                      UZ
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <ul class="mt-[20px] items-center socials__list flex flex-col rotate-90">
+                              <li>
+                                <a href="#" class="group">
+                                  <div
+                                    class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#fff]">
+                                    <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="24"
+                                      viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M12.2651 2C14.9821 2 15.3211 2.01 16.3871 2.06C17.4521 2.11 18.1771 2.277 18.8151 2.525C19.4751 2.779 20.0311 3.123 20.5871 3.678C21.0956 4.1779 21.4891 4.78259 21.7401 5.45C21.9871 6.087 22.1551 6.813 22.2051 7.878C22.2521 8.944 22.2651 9.283 22.2651 12C22.2651 14.717 22.2551 15.056 22.2051 16.122C22.1551 17.187 21.9871 17.912 21.7401 18.55C21.4898 19.2178 21.0963 19.8226 20.5871 20.322C20.0871 20.8303 19.4824 21.2238 18.8151 21.475C18.1781 21.722 17.4521 21.89 16.3871 21.94C15.3211 21.987 14.9821 22 12.2651 22C9.54814 22 9.20914 21.99 8.14314 21.94C7.07814 21.89 6.35314 21.722 5.71514 21.475C5.04746 21.2245 4.44266 20.8309 3.94314 20.322C3.43454 19.8222 3.04107 19.2175 2.79014 18.55C2.54214 17.913 2.37514 17.187 2.32514 16.122C2.27814 15.056 2.26514 14.717 2.26514 12C2.26514 9.283 2.27514 8.944 2.32514 7.878C2.37514 6.812 2.54214 6.088 2.79014 5.45C3.04037 4.78218 3.43394 4.17732 3.94314 3.678C4.44281 3.16923 5.04756 2.77573 5.71514 2.525C6.35314 2.277 7.07714 2.11 8.14314 2.06C9.20914 2.013 9.54814 2 12.2651 2ZM12.2651 7C10.9391 7 9.66728 7.52678 8.7296 8.46447C7.79192 9.40215 7.26514 10.6739 7.26514 12C7.26514 13.3261 7.79192 14.5979 8.7296 15.5355C9.66728 16.4732 10.9391 17 12.2651 17C13.5912 17 14.863 16.4732 15.8007 15.5355C16.7384 14.5979 17.2651 13.3261 17.2651 12C17.2651 10.6739 16.7384 9.40215 15.8007 8.46447C14.863 7.52678 13.5912 7 12.2651 7ZM18.7651 6.75C18.7651 6.41848 18.6334 6.10054 18.399 5.86612C18.1646 5.6317 17.8467 5.5 17.5151 5.5C17.1836 5.5 16.8657 5.6317 16.6313 5.86612C16.3968 6.10054 16.2651 6.41848 16.2651 6.75C16.2651 7.08152 16.3968 7.39946 16.6313 7.63388C16.8657 7.8683 17.1836 8 17.5151 8C17.8467 8 18.1646 7.8683 18.399 7.63388C18.6334 7.39946 18.7651 7.08152 18.7651 6.75ZM12.2651 9C13.0608 9 13.8238 9.31607 14.3865 9.87868C14.9491 10.4413 15.2651 11.2044 15.2651 12C15.2651 12.7956 14.9491 13.5587 14.3865 14.1213C13.8238 14.6839 13.0608 15 12.2651 15C11.4695 15 10.7064 14.6839 10.1438 14.1213C9.58121 13.5587 9.26514 12.7956 9.26514 12C9.26514 11.2044 9.58121 10.4413 10.1438 9.87868C10.7064 9.31607 11.4695 9 12.2651 9Z" />
+                                    </svg>
+
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="group">
+                                  <div
+                                    class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#229ED9]">
+                                    <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="24"
+                                      viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M12.2651 22C6.74214 22 2.26514 17.523 2.26514 12C2.26514 6.477 6.74214 2 12.2651 2C17.7881 2 22.2651 6.477 22.2651 12C22.2651 17.523 17.7881 22 12.2651 22ZM9.15514 13.17L9.16814 13.163L10.0381 16.033C10.1501 16.344 10.3041 16.4 10.4911 16.374C10.6791 16.349 10.7781 16.248 10.9011 16.13L12.0891 14.982L14.6391 16.87C15.1051 17.127 15.4401 16.994 15.5561 16.438L17.2131 8.616C17.3961 7.888 17.0761 7.596 16.5111 7.828L6.77814 11.588C6.11414 11.854 6.11814 12.226 6.65814 12.391L9.15514 13.171V13.17Z" />
+                                    </svg>
+
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="group">
+                                  <div
+                                    class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#4267B2]">
+                                    <svg class="rotate-[-135deg] stroke-current fill-current" width="25" height="25"
+                                      viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M14.0884 14.3232H16.5884L17.5884 10.3232H14.0884V8.32324C14.0884 7.29324 14.0884 6.32324 16.0884 6.32324H17.5884V2.96324C17.2624 2.92024 16.0314 2.82324 14.7314 2.82324C12.0164 2.82324 10.0884 4.48024 10.0884 7.52324V10.3232H7.08838V14.3232H10.0884V22.8232H14.0884V14.3232Z" />
+                                    </svg>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
                           </div>
+                        </div>
+                        <div class="flex items-center space-x-[40px]">
+                          <a href="#" class="text-[#171A63] text-[22px]">Aloqaga
+                            chiqish</a>
+                          <a href="#" class="text-[#171A63] text-[22px]">Qabulga
+                            yozilish</a>
+                        </div>
+                        <div class="mt-[50px]">
+                          <p class="text-[#F03D69] font-medium text-sm uppercase">BIZ
+                            QAYERDA JOYLASHGANMIZ</p>
+                          <a href="#" class="text-xl font-medium text-[#171A63] mt-[4px]">
+                            Toshkent shahar Chillonzor tumani 25 daha 30 uy da
+                            joylashgan
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas uk-hidden">
+              <div class="uk-offcanvas-bar mobile-navbar">
+                <div class="uk-flex uk-flex-right">
+                  <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                      </path>
+                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                      <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                    </svg></button>
+                </div>
+
+                <div class="bg-[#fff] content-wrapper">
+                  <div class="uk-padding-large">
+                    <div class="uk-padding-large">
+                      <a href="index.html">
+                        <img src="../assets/images/icons/logo.svg" alt="logo">
+                      </a>
+                      <div>
+                        <div class="uk-margin-large-top">
+                          <ul class="flex flex-col">
+                            <li>
+                              <a href="index.html">Bosh sahifa</a>
+                            </li>
+                            <li>
+                              <a href="index.html">Biz haqimizda</a>
+                            </li>
+                            <li>
+                              <a href="index.html">Xizmatlarimiz</a>
+                            </li>
+                            <li>
+                              <a href="gallery.html">Galereya</a>
+                            </li>
+                            <li>
+                              <a href="index.html">Kontaktlar</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="uk-inline fade">
+                          <button class="uk-button uk-button-default" type="button">Click</button>
+                          <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.</div>
                         </div>
                       </div>
                     </div>
@@ -325,10 +327,11 @@
               </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-  </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
 
   <main
     class="main-section main-section-background uk-section mt-[100px] md:mt-0 uk-position-relative uk-overflow-hidden z-[1] relative uk-padding-remove-vertical">
@@ -346,7 +349,7 @@
             </div>
           </div>
           <div
-            class="main-contents-wrapper uk-container uk-container-large uk-margin-remove-left left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2 w-full">
+            class="main-contents-wrapper main-contents-wrapper-gallery uk-container uk-container-large uk-margin-remove-left left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2 w-full">
             <div class="uk-container uk-container-large relative uk-margin-remove-left">
 
               <div class="content uk-child-width-1-2@l uk-flex-middle uk-grid-large relative z-[2]" uk-grid>

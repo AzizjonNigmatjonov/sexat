@@ -619,6 +619,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 40px;
 }
 
+.left-\[-60px\] {
+  left: -60px;
+}
+
+.-top-\[60px\] {
+  top: -60px;
+}
+
+.top-\[60px\] {
+  top: 60px;
+}
+
+.top-\[-60px\] {
+  top: -60px;
+}
+
+.top-\[-50px\] {
+  top: -50px;
+}
+
+.left-\[-50px\] {
+  left: -50px;
+}
+
 .z-\[9\] {
   z-index: 9;
 }
@@ -1115,6 +1139,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 10px;
 }
 
+.p-\[30px\] {
+  padding: 30px;
+}
+
+.p-\[24px\] {
+  padding: 24px;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1403,6 +1435,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
+  .sm\:left-\[-40px\] {
+    left: -40px;
+  }
+
+  .sm\:top-\[-40px\] {
+    top: -40px;
+  }
+
   .sm\:mt-\[30px\] {
     margin-top: 30px;
   }
