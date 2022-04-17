@@ -1,0 +1,743 @@
+*,
+*::after,
+*::before {
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+// NAVBAR
+.navbar .list {
+  a {
+    color: #4F545F;
+    opacity: 0.7;
+    font-weight: 600;
+
+    &:hover {
+      color: #51648E;
+      opacity: 1;
+      transition: all .3s;
+    }
+  }
+}
+
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
+  background-color: #171A63;
+  width: 350px;
+
+  @media (max-width: 640px) {
+    width: 83%;
+  }
+}
+
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar .uk-link,
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar a {
+  color: #fff !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+}
+
+.navbar .uk-offcanvas-close {
+  position: static;
+  padding: 0;
+}
+
+.navbar .uk-offcanvas-close svg {
+  fill: #fff;
+}
+
+.navbar .uk-offcanvas-close svg:nth-child(2) {
+  display: none;
+}
+
+.uk-modal-dialog {
+  .uk-modal-close-full {
+    position: absolute;
+    right: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: #F03D69;
+
+    svg:nth-child(2) {
+      display: none;
+    }
+
+    svg {
+      color: #fff;
+      width: 40px !important;
+      transform: rotate(45deg);
+    }
+  }
+
+  .navigation {
+    &__list {
+      li {
+        a {
+          font-size: 28px !important;
+          color: #171A63 !important;
+          font-weight: 500;
+          position: relative;
+        }
+
+        .nav-link.active::after {
+          content: '';
+          width: 50%;
+          height: 2px;
+          background: #F03D69;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .socials__list {
+    a {
+      width: 50px;
+      height: 20px !important;
+      padding: 20px;
+    }
+  }
+}
+
+// MAIN PAGE STEPS SECTION
+.main-section-background {
+  background: rgba(23, 26, 99, 0.02);
+}
+
+.main__advantage-section {
+  ul {
+    li:nth-child(2) {
+      background: #171A63;
+    }
+
+    li:nth-child(5) {
+      background: #171A63;
+    }
+
+    li:nth-child(7) {
+      background: #171A63;
+    }
+  }
+}
+
+.blog-img {
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(23, 26, 99, 0.22);
+  }
+}
+
+.main__steps-section {
+  ul {
+    li {
+      .wrapper {
+        position: relative;
+        z-index: 2;
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .sircle {
+    position: relative;
+
+    &:nth-child(1):after {
+      content: '';
+      width: 1130px;
+      height: 2px;
+      background-color: rgba(23, 26, 99, 0.12);
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  .sircle-2 {
+    position: relative;
+
+    &:nth-child(1):after {
+      content: '';
+      width: 400px;
+      height: 2px;
+      background-color: rgba(23, 26, 99, 0.12);
+      position: absolute;
+      top: 20px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.main__blog-section {
+  .videos {
+    margin-left: 70px;
+  }
+}
+
+// ABOUT PAGE
+.alpine-grid {
+  template {
+    display: none;
+  }
+
+  li {
+    span {
+      word-break: break-all;
+    }
+  }
+}
+
+.about__doctors-section {
+  .card-hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #E3E3EC;
+    box-sizing: border-box;
+    backdrop-filter: blur(172px);
+  }
+}
+
+// SERVICE PAGE
+.service_clinics-setion {
+  ul {
+    li:first-child {
+      margin-top: 0;
+    }
+
+    li:nth-child(2) {
+      margin-top: -60px;
+    }
+
+    li:nth-child(3) {
+      margin-top: -120px;
+    }
+
+    li:nth-child(4) {
+      margin-top: -180px;
+    }
+  }
+}
+
+.service__card {
+  cursor: pointer;
+  color: #171A63;
+  background: #F4F4F4;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+
+  p {
+    opacity: 0.72;
+  }
+
+  transition: 0.3s;
+
+  &:hover {
+    background: #171A63;
+    color: #fff;
+  }
+}
+
+.contact__clinic-photos {
+  .uk-tab {
+    a {
+      color: #171A63;
+      font-weight: 400;
+      font-size: 24px;
+      padding: 16px 0;
+      position: relative;
+      text-transform: none;
+    }
+
+    .uk-active>a {
+      border: none;
+      font-weight: 700;
+    }
+
+    .uk-active>a::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: #F03D69;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      border-radius: 5px;
+    }
+  }
+}
+
+.tab {
+  overflow: auto;
+  width: 100%;
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+  scrollbar-width: none !important;
+  padding: 2px 0;
+}
+
+.tab::before {
+  display: none
+}
+
+.tab::-webkit-scrollbar {
+  display: none
+}
+
+footer {
+  a {
+    transition: 0.2s;
+    &:hover {
+      color: #F03D69;
+    }
+  }
+}
+// RESPONSIVE DESIGN
+@media (max-width: 1440px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .main-contents-wrapper {
+    .content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .main__steps-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: '';
+        width: 1070px;
+      }
+    }
+
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: '';
+        width: 355px;
+      }
+    }
+  }
+
+  .main__blog-section {
+    .videos {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .main__steps-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: '';
+        width: 1000px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-contents-wrapper {
+    top: 220px;
+  }
+
+  .main__steps-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: '';
+        width: 960px;
+      }
+    }
+
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: '';
+        width: 325px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-contents-wrapper {
+    top: 50%;
+  }
+
+  .main__steps-section {
+    .sircle {
+      &:nth-child(1):after {
+        content: unset;
+      }
+    }
+
+    .sircle-2 {
+      &:nth-child(1):after {
+        content: unset;
+      }
+    }
+  }
+
+  .service_clinics-setion {
+    ul {
+      li {
+        margin-top: 30px !important;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 960px) {
+  .main__blog-section {
+    .videos {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-contents-wrapper {
+    .content {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    top: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-contents-wrapper {
+    background-image: url('../images/main/main-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 520px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+
+    h1,
+    p,
+    a {
+      color: #fff !important;
+    }
+
+    .content {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .title-2 {
+    word-break: break-all;
+  }
+
+  .uk-container {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+
+  .main__blog-section {
+    .videos {
+      margin-left: 22px;
+      margin-right: 22px;
+    }
+  }
+}
+
+// ANIMATION
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.services-img-1 {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.services-img-2 {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.services-img-1:hover {
+  transform: translate3d(-50px, -60px, 75px);
+  transition: all 0.7s ease-in-out;
+}
+
+.services-img-2:hover {
+  transform: translate3d(70px, 50px, 75px);
+  transition: all 0.7s ease-in-out;
+}
+
+.main-section-btn:hover .main-section-btn-arrow {
+  transform: translate3d(7px, 0, 75px);
+}
+
+$icon-size: 40px;
+$main-color: #171A63;
+$border-radius: 0.5; //15% = 0.15, 50% = 0.50 etc.
+// Icon Colors
+$white: #FFFFFF;
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: $icon-size;
+  height: $icon-size;
+  margin-left: $icon-size/5;
+  margin-right: $icon-size/5;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    border: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+  }
+
+  img {
+    position: relative;
+  }
+}
+
+.icon-collapse {
+  &::before {
+    border-radius: 0;
+  }
+
+  &:hover::before {
+    box-shadow:
+      inset 0 $icon-size/2 0 0 $main-color,
+      inset 0 $icon-size/-2 0 0 $main-color;
+  }
+}
+
+.main__main-section-right {
+  .uk-dotnav {
+    justify-content: flex-start;
+  }
+
+  .uk-dotnav>*>* {
+    background-color: #E5E5E5 !important;
+    border-radius: 1px;
+    width: 13px;
+    height: 7px;
+    border-radius: 3px;
+  }
+
+  .uk-dotnav>.uk-active>* {
+    background-color: #F03D69 !important;
+    opacity: 1 !important;
+  }
+}
+
+.main__discounts-section {
+  .uk-dotnav {
+    justify-content: flex-start;
+  }
+
+  .uk-dotnav>*>* {
+    background-color: #E5E5E5 !important;
+    border-radius: 1px;
+    width: 20px;
+    height: 10px;
+  }
+
+  .uk-dotnav>.uk-active>* {
+    background-color: #F03D69 !important;
+    opacity: 1 !important;
+  }
+
+}
+
+.uk-dotnav>*>* {
+  background-color: #171A6355 !important;
+  opacity: 0.36;
+  border-radius: 1px;
+  width: 30px;
+  height: 10px;
+}
+
+.uk-dotnav>.uk-active>* {
+  background-color: #171A63 !important;
+  opacity: 1 !important;
+}
+
+// ANIMATION
+.form-input-anim {
+  position: relative;
+  overflow: hidden;
+
+  label {
+    position: absolute;
+    left: 20px;
+    width: 100%;
+    top: -10px;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+
+  input:focus+.label-name .content-name,
+  input:valid+.label-name .content-name {
+    transform: translateY(-95%);
+    font-size: 11px;
+    left: 0px;
+  }
+
+  input:focus+.label-name::after,
+  .form input:valid+.label-name::after {
+    transform: translateX(0%);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  margin-right: 2px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(60deg, #171A6355 43%, #171A6355 49%);
+  border-radius: 2px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, #171A63 14%, #171A63 64%);
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(245, 245, 245, 0.88);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+  box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+}
+
+// FONTS
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

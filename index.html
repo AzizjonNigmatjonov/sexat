@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sexat</title>
+
+    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="icon" href="../assets/logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header"
+        uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#51648E] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
+        class="navbar uk-sticky">
+        <header class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]">
+            <div class="uk-container uk-container-large">
+                <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
+                    <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
+                        <a href="index.html">
+                            <img class="uk-animation-fade w-[100px]" src="../assets/images/icons/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <div class="uk-hidden@l uk-first-column">
+                            <div class="text-[#1d1d1b]">
+                                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip"
+                                    class="text-[#1d1d1b] hover-link" aria-expanded="false">
+                                    <svg width="49" height="41" viewBox="0 0 49 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="10" y="10" width="15" height="3" fill="#171A63" />
+                                        <rect x="10" y="19" width="29" height="3" fill="#171A63" />
+                                        <rect x="24" y="28" width="15" height="3" fill="#171A63" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
+                                <div class="uk-offcanvas-bar">
+
+                                    <div class="uk-flex uk-flex-right">
+                                        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                height="24">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                                                </path>
+                                            </svg>
+                                            <svg width="14" height="14" viewBox="0 0 14 14"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13"
+                                                    y2="13"></line>
+                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1"
+                                                    y2="13"></line>
+                                            </svg></button>
+                                    </div>
+
+                                    <ul class="mt-[20px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                                        uk-grid=""
+                                        uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="index.html" class="font-400 animBottom"
+                                                style="visibility: hidden;">
+                                                Bosh sahifa
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="about.html" class="font-400 animBottom"
+                                                style="visibility: hidden;">
+                                                Biz haqimizda
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="service.html" class="font-400 animBottom"
+                                                style="visibility: hidden;">
+                                                Xizmatlarimiz
+                                            </a>
+                                        </li>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="gallery.html" class="font-400 animBottom"
+                                                style="visibility: hidden;">
+                                                Galereya
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="contact.html" class="font-400 animBottom"
+                                                style="visibility: hidden;">
+                                                Kontaktlar
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <ul class="uk-grid-small uk-flex-middle uk-grid uk-grid-stack" uk-grid="">
+                                                <li class="text-[#fff]">
+                                                    <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                                                        style="visibility: hidden;">UZ</a>
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                                                </li>
+                                                <li class="text-[#fff]">
+                                                    <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                                                        style="visibility: hidden;">RU</a>
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                                                </li>
+                                                <li class="text-[#fff]">
+                                                    <a href="#" class="text-[#fff] font-400 hover-link animBottom"
+                                                        style="visibility: hidden;">EN</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-[#1d1d1b]">
+                                <a href="#modal-full" uk-toggle class="uk-visible@l">
+                                    <svg width="49" height="41" viewBox="0 0 49 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="10" y="10" width="15" height="3" fill="#171A63" />
+                                        <rect x="10" y="19" width="29" height="3" fill="#171A63" />
+                                        <rect x="24" y="28" width="15" height="3" fill="#171A63" />
+                                    </svg>
+                                </a>
+                                <div id="modal-full" class="uk-modal-full" uk-modal>
+                                    <div class="uk-modal-dialog">
+                                        <div class="uk-close-large">
+                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close>
+                                                <svg width="50" height="50" viewBox="0 0 14 14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <line fill="none" stroke="#fff" stroke-width="1.1" x1="1" y1="1"
+                                                        x2="13" y2="13"></line>
+                                                    <line fill="none" stroke="#fff" stroke-width="1.1" x1="13" y1="1"
+                                                        x2="1" y2="13"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                            <div class="uk-background-cover"
+                                                style="background-image: url('../assets/images/main/navbar.png');"
+                                                uk-height-viewport></div>
+                                            <div class="px-[100px] navigation">
+                                                <div>
+                                                    <a href="index.html">
+                                                        <img src="../assets/images/icons/logo.svg" alt="icon">
+                                                    </a>
+                                                    <div class="uk-child-width-1-2 mt-[50px]" uk-grid>
+                                                        <div>
+                                                            <ul class="navigation__list space-y-[24px]">
+                                                                <li>
+                                                                    <a href="index.html"
+                                                                        class="line-animation  nav-link active">
+                                                                        Bosh sahifa
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="about.html"
+                                                                        class="line-animation nav-link">
+                                                                        Biz haqimizda
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="service.html"
+                                                                        class="line-animation nav-link">
+                                                                        Xizmatlarimiz
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="gallery.html"
+                                                                        class="line-animation nav-link">
+                                                                        Galereya
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="contact.html"
+                                                                        class="line-animation nav-link">
+                                                                        Kontaktlar
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-inline">
+                                                                <button
+                                                                    class="uk-button bg-[#171A63] rounded-[40px] text-[#fff] flex items-center space-x-[8px] py-[5px]"
+                                                                    type="button">
+                                                                    <img src="../assets/images/icons/globus.svg"
+                                                                        alt="globus">
+                                                                    <span>Uzbek</span>
+                                                                    <img src="../assets/images/icons/small-arrow-bottom.svg"
+                                                                        alt="arrow">
+                                                                </button>
+                                                                <div uk-dropdown="mode: click" class="rounded-[20px]"
+                                                                    style="min-width: 80px; width: 100%;">
+                                                                    <ul
+                                                                        class="flex flex-col items-center space-y-[12px]">
+                                                                        <li>
+                                                                            <a href="#"
+                                                                                class="text-[#171A63] text-[18px] font-medium">
+                                                                                RU
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"
+                                                                                class="text-[#171A63] text-[18px] font-medium">
+                                                                                UZ
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <ul
+                                                                class="mt-[20px] items-center socials__list flex flex-col rotate-90">
+                                                                <li>
+                                                                    <a href="#" class="group">
+                                                                        <div
+                                                                            class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#fff]">
+                                                                            <svg class="rotate-[-135deg] stroke-current fill-current"
+                                                                                width="25" height="24"
+                                                                                viewBox="0 0 25 24" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M12.2651 2C14.9821 2 15.3211 2.01 16.3871 2.06C17.4521 2.11 18.1771 2.277 18.8151 2.525C19.4751 2.779 20.0311 3.123 20.5871 3.678C21.0956 4.1779 21.4891 4.78259 21.7401 5.45C21.9871 6.087 22.1551 6.813 22.2051 7.878C22.2521 8.944 22.2651 9.283 22.2651 12C22.2651 14.717 22.2551 15.056 22.2051 16.122C22.1551 17.187 21.9871 17.912 21.7401 18.55C21.4898 19.2178 21.0963 19.8226 20.5871 20.322C20.0871 20.8303 19.4824 21.2238 18.8151 21.475C18.1781 21.722 17.4521 21.89 16.3871 21.94C15.3211 21.987 14.9821 22 12.2651 22C9.54814 22 9.20914 21.99 8.14314 21.94C7.07814 21.89 6.35314 21.722 5.71514 21.475C5.04746 21.2245 4.44266 20.8309 3.94314 20.322C3.43454 19.8222 3.04107 19.2175 2.79014 18.55C2.54214 17.913 2.37514 17.187 2.32514 16.122C2.27814 15.056 2.26514 14.717 2.26514 12C2.26514 9.283 2.27514 8.944 2.32514 7.878C2.37514 6.812 2.54214 6.088 2.79014 5.45C3.04037 4.78218 3.43394 4.17732 3.94314 3.678C4.44281 3.16923 5.04756 2.77573 5.71514 2.525C6.35314 2.277 7.07714 2.11 8.14314 2.06C9.20914 2.013 9.54814 2 12.2651 2ZM12.2651 7C10.9391 7 9.66728 7.52678 8.7296 8.46447C7.79192 9.40215 7.26514 10.6739 7.26514 12C7.26514 13.3261 7.79192 14.5979 8.7296 15.5355C9.66728 16.4732 10.9391 17 12.2651 17C13.5912 17 14.863 16.4732 15.8007 15.5355C16.7384 14.5979 17.2651 13.3261 17.2651 12C17.2651 10.6739 16.7384 9.40215 15.8007 8.46447C14.863 7.52678 13.5912 7 12.2651 7ZM18.7651 6.75C18.7651 6.41848 18.6334 6.10054 18.399 5.86612C18.1646 5.6317 17.8467 5.5 17.5151 5.5C17.1836 5.5 16.8657 5.6317 16.6313 5.86612C16.3968 6.10054 16.2651 6.41848 16.2651 6.75C16.2651 7.08152 16.3968 7.39946 16.6313 7.63388C16.8657 7.8683 17.1836 8 17.5151 8C17.8467 8 18.1646 7.8683 18.399 7.63388C18.6334 7.39946 18.7651 7.08152 18.7651 6.75ZM12.2651 9C13.0608 9 13.8238 9.31607 14.3865 9.87868C14.9491 10.4413 15.2651 11.2044 15.2651 12C15.2651 12.7956 14.9491 13.5587 14.3865 14.1213C13.8238 14.6839 13.0608 15 12.2651 15C11.4695 15 10.7064 14.6839 10.1438 14.1213C9.58121 13.5587 9.26514 12.7956 9.26514 12C9.26514 11.2044 9.58121 10.4413 10.1438 9.87868C10.7064 9.31607 11.4695 9 12.2651 9Z" />
+                                                                            </svg>
+
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="group">
+                                                                        <div
+                                                                            class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#229ED9]">
+                                                                            <svg class="rotate-[-135deg] stroke-current fill-current"
+                                                                                width="25" height="24"
+                                                                                viewBox="0 0 25 24" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M12.2651 22C6.74214 22 2.26514 17.523 2.26514 12C2.26514 6.477 6.74214 2 12.2651 2C17.7881 2 22.2651 6.477 22.2651 12C22.2651 17.523 17.7881 22 12.2651 22ZM9.15514 13.17L9.16814 13.163L10.0381 16.033C10.1501 16.344 10.3041 16.4 10.4911 16.374C10.6791 16.349 10.7781 16.248 10.9011 16.13L12.0891 14.982L14.6391 16.87C15.1051 17.127 15.4401 16.994 15.5561 16.438L17.2131 8.616C17.3961 7.888 17.0761 7.596 16.5111 7.828L6.77814 11.588C6.11414 11.854 6.11814 12.226 6.65814 12.391L9.15514 13.171V13.17Z" />
+                                                                            </svg>
+
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="group">
+                                                                        <div
+                                                                            class="icon icon-collapse border-[1.5px] border-[#171A63] flex items-center justify-center rounded-[6px] duration-150 rotate-45 text-[#F03D69] group-hover:text-[#4267B2]">
+                                                                            <svg class="rotate-[-135deg] stroke-current fill-current"
+                                                                                width="25" height="25"
+                                                                                viewBox="0 0 25 25" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M14.0884 14.3232H16.5884L17.5884 10.3232H14.0884V8.32324C14.0884 7.29324 14.0884 6.32324 16.0884 6.32324H17.5884V2.96324C17.2624 2.92024 16.0314 2.82324 14.7314 2.82324C12.0164 2.82324 10.0884 4.48024 10.0884 7.52324V10.3232H7.08838V14.3232H10.0884V22.8232H14.0884V14.3232Z" />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex items-center space-x-[40px]">
+                                                        <a href="#" class="text-[#171A63] text-[22px]">Aloqaga
+                                                            chiqish</a>
+                                                        <a href="#" class="text-[#171A63] text-[22px]">Qabulga
+                                                            yozilish</a>
+                                                    </div>
+                                                    <div class="mt-[50px]">
+                                                        <p class="text-[#F03D69] font-medium text-sm uppercase">BIZ
+                                                            QAYERDA JOYLASHGANMIZ</p>
+                                                        <a href="#" class="text-xl font-medium text-[#171A63] mt-[4px]">
+                                                            Toshkent shahar Chillonzor tumani 25 daha 30 uy da
+                                                            joylashgan
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true"
+                                class="uk-offcanvas uk-hidden">
+                                <div class="uk-offcanvas-bar mobile-navbar">
+                                    <div class="uk-flex uk-flex-right">
+                                        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34"
+                                                height="34">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                                                </path>
+                                            </svg>
+                                            <svg width="14" height="14" viewBox="0 0 14 14"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13"
+                                                    y2="13"></line>
+                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1"
+                                                    y2="13"></line>
+                                            </svg></button>
+                                    </div>
+
+                                    <div class="bg-[#fff] content-wrapper">
+                                        <div class="uk-padding-large">
+                                            <div class="uk-padding-large">
+                                                <a href="index.html">
+                                                    <img src="../assets/images/icons/logo.svg" alt="logo">
+                                                </a>
+                                                <div>
+                                                    <div class="uk-margin-large-top">
+                                                        <ul class="flex flex-col">
+                                                            <li>
+                                                                <a href="index.html">Bosh sahifa</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index.html">Biz haqimizda</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index.html">Xizmatlarimiz</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="gallery.html">Galereya</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index.html">Kontaktlar</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="uk-inline">
+                                                        <button class="uk-button uk-button-default"
+                                                            type="button">Click</button>
+                                                        <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit, sed do eiusmod tempor
+                                                            incididunt.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main
+        class="main-section mt-[50px] sm:mt-[60px] md:mt-[40px] uk-section uk-position-relative uk-overflow-hidden z-[1] relative uk-padding-remove-bottom">
+        <div>
+            <ul uk-scrollspy="target: .animation; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+                <li class="uk-height-1-1 uk-cover-container min-h-[100vh]" style="min-height: 520px !important;">
+                    <div class="uk-child-width-1-2@l uk-grid-collapse uk-grid-match uk-visible@s" uk-grid>
+                        <div>
+                            <img class="h-full w-full" src="../assets/images/main/main-img.png" alt="img"
+                                uk-scrollspy="cls: uk-animation-slide-left;">
+                        </div>
+                        <div class="uk-visible@l">
+                            <img src="../assets/images/main/main-img-2.png" alt="img"
+                                uk-scrollspy="cls: uk-animation-slide-right;">
+                        </div>
+                    </div>
+                    <div
+                        class="main-contents-wrapper uk-container uk-container-large uk-margin-remove-left left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2 w-full">
+                        <div class="uk-container uk-container-large relative uk-margin-remove-left">
+
+                            <div class="content uk-child-width-1-2@l uk-flex-middle uk-grid-large relative z-[2]"
+                                uk-grid>
+                                <div>
+                                    <h1 class="title text-white font-[600] animation">
+                                        Biz bilan barcha
+                                        dardlaringizga davo
+                                        topa olasiz!
+                                    </h1>
+                                    <p class="text-[#fff] text-opacity-[0.72] mt-[10px] animation">
+                                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san
+                                        seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                                        sotuv bilan muammo larga duch
+                                    </p>
+                                    <div class="mt-[50px] text-[#fff] inline-block animation">
+                                        <a href="#" class="flex items-center text-[#fff] text-[22px] group">
+                                            <span>Aloqaga chiqish</span>
+                                            <div class="ml-[20px] group-hover:ml-[30px] duration-300">
+                                                <div
+                                                    class="w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                                    <img class="-rotate-45" src="../assets/images/icons/arrow.svg"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mt-[50px] uk-visible@l main__main-section-right">
+                                    <div uk-slider="autoplay: true">
+
+                                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                                            <ul class="uk-slider-items uk-child-width-1-1 uk-grid py-[20px]">
+                                                <li>
+                                                    <div>
+                                                        <p class="text-[#fff] font-[600] text-opacity-[0.42]">
+                                                            Xizmatlarimiz</p>
+                                                        <h2 class="text-[#fff] font-[600] text-[36px] mt-[18px]">
+                                                            Ginekologiya</h2>
+                                                        <p class="text-[#fff] text-opacity-[0.72] mt-[10px]">
+                                                            Ban elimi sana vadiim duramadim yine galdim bu da benim
+                                                            dardim
+                                                            san
+                                                            seeev diye yinemi sevayim Biznesini endigina boshlagan,
+                                                            boshqaruv va
+                                                            sotuv bilan muammo larga duch
+                                                        </p>
+                                                        <div class="mt-[50px] text-[#fff] inline-block">
+                                                            <a href="#"
+                                                                class="flex items-center text-[#fff] text-[18px] group">
+                                                                <span>Aloqaga chiqish</span>
+                                                                <div
+                                                                    class="ml-[20px] group-hover:ml-[30px] duration-300">
+                                                                    <div
+                                                                        class="w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                                                        <img class="-rotate-45"
+                                                                            src="../assets/images/icons/arrow.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <p class="text-[#fff] font-[600] text-opacity-[0.42]">
+                                                            Xizmatlarimiz</p>
+                                                        <h2 class="text-[#fff] font-[600] text-[36px] mt-[18px]">
+                                                            Ginekologiya</h2>
+                                                        <p class="text-[#fff] text-opacity-[0.72] mt-[10px]">
+                                                            Ban elimi sana vadiim duramadim yine galdim bu da benim
+                                                            dardim
+                                                            san
+                                                            seeev diye yinemi sevayim Biznesini endigina boshlagan,
+                                                            boshqaruv va
+                                                            sotuv bilan muammo larga duch
+                                                        </p>
+                                                        <div class="mt-[50px] text-[#fff] inline-block">
+                                                            <a href="#"
+                                                                class="flex items-center text-[#fff] text-[18px] group">
+                                                                <span>Aloqaga chiqish</span>
+                                                                <div
+                                                                    class="ml-[20px] group-hover:ml-[30px] duration-300">
+                                                                    <div
+                                                                        class="w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                                                        <img class="-rotate-45"
+                                                                            src="../assets/images/icons/arrow.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <p class="text-[#fff] font-[600] text-opacity-[0.42]">
+                                                            Xizmatlarimiz</p>
+                                                        <h2 class="text-[#fff] font-[600] text-[36px] mt-[18px]">
+                                                            Ginekologiya</h2>
+                                                        <p class="text-[#fff] text-opacity-[0.72] mt-[10px]">
+                                                            Ban elimi sana vadiim duramadim yine galdim bu da benim
+                                                            san
+                                                            seeev diye yinemi sevayim Biznesini endigina boshlagan,
+                                                            boshqaruv va
+                                                            sotuv bilan muammo larga duch
+                                                        </p>
+                                                        <div class="mt-[50px] text-[#fff] inline-block">
+                                                            <a href="#"
+                                                                class="flex items-center text-[#fff] text-[18px] group">
+                                                                <span>Aloqaga chiqish</span>
+                                                                <div
+                                                                    class="ml-[20px] group-hover:ml-[30px] duration-300">
+                                                                    <div
+                                                                        class="w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                                                        <img class="-rotate-45"
+                                                                            src="../assets/images/icons/arrow.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <img class="absolute right-0 top-[100px] z-[-1]" src="../assets/images/icons/vector.svg" alt="">
+    </main>
+
+
+    <section class="uk-section relative overflow-hidden" style="background: rgba(23, 26, 99, 0.06);">
+        <div class="uk-container uk-container-large">
+            <div class="flex justify-center lg:space-x-[30px] xl:space-x-[70px] flex-col lg:flex-row">
+                <div uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+                    <h4 class="text-[#171A63] text-[28px] font-medium">Klinikaning eng asosiy maqsadi:</h4>
+                </div>
+                <div class="lg:w-[600px] mt-[22px] lg:mt-0" uk-scrollspy="cls: uk-animation-slide-right; delay: 300;">
+                    <p class="text-[20px] font-[300] text-[#171A63]">
+                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                        Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch Ban elimi sana vadiim
+                        duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                        sotuv bilan muammo larga duch
+                    </p>
+                    <p class="text-[20px] font-[300] text-[#171A63] mt-[20px]">
+                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                        Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo larga duch
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img class="absolute left-0 bottom-[50px] uk-visible@s" src="../assets/images/icons/pattern.svg" alt="pattern">
+    </section>
+
+    <section class="uk-section overflow-hidden">
+        <div class="uk-container uk-container-large relative">
+            <div class="uk-child-width-1-2@l relative z-[2]" uk-grid>
+                <div uk-scrollspy="target: .animate; cls: uk-animation-slide-top; delay: 300; repeat: true">
+                    <h2 class="title-2 animate">Bizning barcha xizmatlarimiz</h2>
+                    <p class="paragraph lg:w-[500px] animate">Ban elimi sana vadiim duramadim yine galdim
+                        bu da benim dardim san seeev diye yinemi sevayim Biznesini endigina boshlagan, boshqaruv va
+                        sotuv bilan muammo
+                    </p>
+                </div>
+                <div uk-scrollspy="target: .animate; cls: uk-animation-fade; delay: 100; repeat: true">
+                    <ul>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Urologiya</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Ginekologiya</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Stomatologiya</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Lab</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Proktologiya</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="border-b border-[#171A63] py-[15px] sm:py-[30px] animate">
+                            <a href="#" class="flex items-center justify-between group">
+                                <div class="w-[80%] sm:w-[70%]">
+                                    <h3 class="title-3">Flebologiya</h3>
+                                    <p class="paragraph mt-[12px]">Ban elimi sana vadiim duramadim yine galdim bu da
+                                        benim dardim
+                                        san seeev diye
+                                        yinemi </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="w-[40px] h-[40px] group-hover:bg-[#F03D69] text-[#171A63] duration-200 group-hover:text-[#fff] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <svg class="stroke-current -rotate-45" width="26" height="22"
+                                            viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1599 5.90112L22.2587 10.9999L17.1599 16.0987"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1.67871 11L21.8387 11" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 uk-visible@s"
+                src="../assets/images/icons/services-pattern.svg" alt="img" loading="lazy">
+        </div>
+    </section>
+
+    <section class="uk-section bg-[#171A63] overflow-hidden relative">
+        <img class="absolute left-[-300px] uk-height-1-1 top-1/2 -translate-y-1/2 uk-visible@l" loading="lazy"
+            src="../assets/images/main/form-pattern.png" alt="">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2@l" uk-grid>
+                <div uk-scrollspy="target: .animate; cls: uk-animation-slide-top; delay: 100; repeat: true">
+                    <h2 class="title-2 text-[#fff] animate">Shu paytgacha qanday
+                        natijalarga erishganmiz
+                    </h2>
+                    <p class="text-[#FFFFFF] text-opacity-[0.72] text-lg mt-[10px] animate">
+                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                    </p>
+                </div>
+                <div>
+                    <ul class="uk-child-width-1-2@l uk-child-width-1-4@m uk-child-width-1-2 uk-grid-match" uk-grid>
+                        <li uk-parallax="opacity: 0,1; y: -100,0; scale: 0.7,1; end: 50vh + 50%; viewport: 0.5;">
+                            <div class="relative overflow-hidden">
+                                <img class="absolute left-[-40px] top-[-40px]"
+                                    src="../assets/images/icons/digitals-pattern.svg" alt="img">
+                                <img class="absolute top-0 right-[-10px] w-full h-full object-cover"
+                                    src="../assets/images/icons/digital-back.svg" alt="icon">
+                                <div class="bg-[#fff] p-[10px] sm:p-[30px] overflow-hidden h-full">
+                                    <span class="title font-[600]">12</span>
+                                    <p class="text-[#171A63] sm:text-lg font-[600]">Malakali shifokorlarimiz</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li uk-parallax="opacity: 0,1; y: -100,0; scale: 0.7,1; end: 50vh + 50%; viewport: 0.5;">
+                            <div class="relative overflow-hidden">
+                                <img class="absolute left-[-40px] top-[-40px]"
+                                    src="../assets/images/icons/digitals-pattern.svg" alt="img">
+                                <img class="absolute top-0 right-[-10px] w-full h-full object-cover"
+                                    src="../assets/images/icons/digital-back.svg" alt="icon">
+                                <div class="bg-[#fff] p-[10px] sm:p-[30px] overflow-hidden h-full">
+                                    <span class="title font-[600]">42</span>
+                                    <p class="text-[#171A63] sm:text-lg font-[600]">Rozi bemorlarimiz</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li uk-parallax="opacity: 0,1; y: 100,0; scale: 0.7,1; end: 50vh + 50%; viewport: 0.3;">
+                            <div class="relative overflow-hidden">
+                                <img class="absolute left-[-40px] top-[-40px]"
+                                    src="../assets/images/icons/digitals-pattern.svg" alt="img">
+                                <img class="absolute top-0 right-[-10px] w-full h-full object-cover"
+                                    src="../assets/images/icons/digital-back.svg" alt="icon">
+                                <div class="bg-[#fff] p-[10px] sm:p-[30px] overflow-hidden h-full">
+                                    <span class="title font-[600]">7</span>
+                                    <p class="text-[#171A63] sm:text-lg font-[600]">Yo‘nalishlarimiz bor</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li uk-parallax="opacity: 0,1; y: 100,0; scale: 0.7,1; end: 50vh + 50%; viewport: 0.3">
+                            <div class="relative overflow-hidden">
+                                <img class="absolute left-[-40px] top-[-40px]"
+                                    src="../assets/images/icons/digitals-pattern.svg" alt="img">
+                                <img class="absolute top-0 right-[-10px] w-full h-full object-cover"
+                                    src="../assets/images/icons/digital-back.svg" alt="icon">
+                                <div class="bg-[#fff] p-[10px] sm:p-[30px] overflow-hidden h-full">
+                                    <span class="title font-[600]">5</span>
+                                    <p class="text-[#171A63] sm:text-lg font-[600]">Yillik tajriba</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img class="absolute left-0 top-1/2 -translate-y-1/2 z-[1]" loading="lazy"
+            src="../assets/images/icons/arrow-pattern.svg-" alt="">
+    </section>
+
+    <section class="uk-section uk-margin-large-top main__advantage-section overflow-hidden">
+        <div class="uk-container uk-container-large"
+            uk-scrollspy="target: .animate; cls: uk-animation-fade; delay: 100;">
+            <ul class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@m" uk-grid
+                uk-scrollspy="target: .fade; cls: uk-animation-scale-up; repeat: true">
+                <li class="uk-width-1-2@m">
+                    <div class="pb-[20px] lg:pb-0"
+                        uk-scrollspy="target: .anim; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+                        <h2 class="title-2 anim">
+                            Bizning boshqalardan
+                            ustunlik tomonlarimizni ko‘ring
+                        </h2>
+                        <p class="paragraph anim">
+                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                            Biznesini endigina boshlagan, boshqaruv va sotuv bilan
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative fade">
+                        <img class="absolute right-0 top-0" src="../assets/images/icons/pattern-card-2.svg" alt="">
+                        <div class="p-[20px] sm:p-[30px] relative z-[2]">
+                            <span class="text-[#fff] text-opacity-[0.42] text-[22px] font-[700]">01</span>
+                            <h4 class="text-2xl font-medium text-[#fff] mt-[8px]">Zamonaviy texnologiyalar</h4>
+                            <p class="text-[#fff] text-opacity-[0.72] mt-[8px]">
+                                Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                yine galdim bu da benim dardim san seeev diye yinemi
+                                sevayim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative fade">
+                        <img class="absolute right-0 top-0" src="../assets/images/icons/pattern-card-2.svg" alt="">
+                        <div class="p-[20px] sm:p-[30px] relative z-[2]">
+                            <span class="text-[##171A63] text-opacity-[0.42] text-[22px] font-[700]">02</span>
+                            <h4 class="text-2xl font-medium text-[##171A63] mt-[8px]">Komfort</h4>
+                            <p class="text-[##171A63] text-opacity-[0.72] mt-[8px]">
+                                Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                yine galdim bu da benim dardim san seeev diye yinemi
+                                sevayim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="uk-visible@l">
+                    <div class="relative fade">
+                        <div class="text-[#171A63] inline-block">
+                            <a href="#" class="flex items-center text-[#171A63] text-[22px] group">
+                                <span>Aloqaga chiqish</span>
+                                <div class="ml-[20px] group-hover:ml-[30px] duration-300">
+                                    <div
+                                        class="w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <img class="-rotate-45" src="../assets/images/icons/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative fade">
+                        <img class="absolute right-0 top-0" src="../assets/images/icons/pattern-card-2.svg" alt="">
+                        <div class="p-[20px] sm:p-[30px] relative z-[2]">
+                            <span class="text-[#fff] text-opacity-[0.42] text-[22px] font-[700]">03</span>
+                            <h4 class="text-2xl font-medium text-[#fff] mt-[8px]">Malakali shifikorlar</h4>
+                            <p class="text-[#fff] text-opacity-[0.72] mt-[8px]">
+                                Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                yine galdim bu da benim dardim san seeev diye yinemi
+                                sevayim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative fade">
+                        <img class="absolute right-0 top-0" src="../assets/images/icons/pattern-card-2.svg" alt="">
+                        <div class="p-[20px] sm:p-[30px] relative z-[2]">
+                            <span class="text-[##171A63] text-opacity-[0.42] text-[22px] font-[700]">04</span>
+                            <h4 class="text-2xl font-medium text-[##171A63] mt-[8px]">Uyga chaqiruv hizmati</h4>
+                            <p class="text-[##171A63] text-opacity-[0.72] mt-[8px]">
+                                Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                yine galdim bu da benim dardim san seeev diye yinemi
+                                sevayim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative fade">
+                        <img class="absolute right-0 top-0" src="../assets/images/icons/pattern-card-2.svg" alt="">
+                        <div class="p-[20px] sm:p-[30px] relative z-[2]">
+                            <span class="text-[#fff] text-opacity-[0.42] text-[22px] font-[700]">05</span>
+                            <h4 class="text-2xl font-medium text-[#fff] mt-[8px]">Jarrohlik honalari</h4>
+                            <p class="text-[#fff] text-opacity-[0.72] mt-[8px]">
+                                Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                yine galdim bu da benim dardim san seeev diye yinemi
+                                sevayim
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="uk-section main__steps-section outline-hidden">
+        <div class="uk-container uk-container-large">
+            <h2 class="title-2 lg:w-[860px]" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">
+                Bemorlar qanday bosqichlardan
+                o‘tishadi
+            </h2>
+            <div class="mt-[40px] sm:mt-[70px]"
+                uk-scrollspy="target: .animate; cls: uk-animation-fade; delay: 100; repeat: true">
+                <ul class="uk-grid-large uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid="">
+                    <li>
+                        <div class="flex flex-col animate">
+                            <div class="sircle">
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">01</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Qabulga yoziladi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Klinikamizga tashrif buyurmoqchi bo'lgan har bir inson onlayn qabulga yoziladi.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col animate">
+                            <div>
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">02</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] text-xl sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Ko‘rikdan o‘tadi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu da
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col animate">
+                            <div>
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">03</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] text-xl sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Mutaxasislar ko’radi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu da
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex flex-col animate">
+                            <div>
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">04</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] text-xl sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Tashxis qoyiladi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu da
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin uk-first-column">
+                        <div class="flex flex-col animate">
+                            <div class="sircle-2">
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">05</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] text-xl sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Bemor davolanadi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu da
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-grid-margin">
+                        <div class="flex flex-col animate">
+                            <div>
+                                <div
+                                    class="wrapper w-[40px] h-[40px] bg-[#F03D69] rounded-[6px] rotate-45 flex items-center justify-center">
+                                    <span class="text-white font-[700] text-xl -rotate-45">06</span>
+                                </div>
+                            </div>
+                            <div class="mt-[22px]">
+                                <h4 class="text-[#0C2233] text-xl sm:text-[24px] font-[600] mb-[4px] sm:mb-[12px]">
+                                    Dardiga malham topiladi
+                                </h4>
+                                <p class="text-[#0C2233] text-opacity-[0.72]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu da
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-[#171A63] uk-margin-large-top relative main__discounts-section">
+        <img class="absolute left-[-300px] uk-height-1-1 top-1/2 -translate-y-1/2 uk-visible@l" loading="lazy"
+            src="../assets/images/main/form-pattern.png" alt="">
+        <img class="absolute right-0 top-0 uk-height-1-1 uk-visible@l" src="../assets/images/icons/form-back.svg"
+            loading="lazy" alt="">
+        <div class="uk-container uk-container-large">
+            <div class="lg:w-[800px]" uk-slider="autoplay: true">
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <ul class="uk-slider-items uk-child-width-1-1 uk-grid ">
+                        <li>
+                            <div>
+                                <h2 class="title-2 text-white">
+                                    Bu joyida qanaqadur aksiyalar
+                                    bo‘lsa yoziladi
+                                </h2>
+                                <p class="text-white text-opacity-[0.82] mt-[10px] md:w-[80%]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu
+                                    da
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2 class="title-2 text-white">
+                                    Bu joyida qanaqadur aksiyalar
+                                    bo‘lsa yoziladi
+                                </h2>
+                                <p class="text-white text-opacity-[0.82] mt-[10px] md:w-[80%]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu
+                                    da
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2 class="title-2 text-white">
+                                    Bu joyida qanaqadur aksiyalar
+                                    bo‘lsa yoziladi
+                                </h2>
+                                <p class="text-white text-opacity-[0.82] mt-[10px] md:w-[80%]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu
+                                    da
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2 class="title-2 text-white">
+                                    Bu joyida qanaqadur aksiyalar
+                                    bo‘lsa yoziladi
+                                </h2>
+                                <p class="text-white text-opacity-[0.82] mt-[10px] md:w-[80%]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                    yine galdim bu
+                                    da
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section">
+        <div class="uk-container uk-container-large">
+            <h2 class="title-2 lg:w-[800px]" data-aos="zoom-in-left">
+                Bizga ko‘p beriladigan savollar bilan tanishing
+            </h2>
+            <div class="mt-[20px]">
+                <ul class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-match uk-grid-large" uk-grid>
+                    <li>
+                        <div data-aos="zoom-in-down">
+                            <span class="text-[#023462] text-opacity-[0.22] text-[28px] mb-[8px]">01</span>
+                            <p class="text-[#171A63] font-medium text-[22px]">Chet davlatidan tashrif buyurganbemorlar
+                                qanday xujjatlari kerak bo‘ladi,ro‘yxatdan o‘tishda klinika yordam qiladimi?</p>
+                            <div class="w-[100px] h-[2px] bg-[#F03D69] bg-opacity-[0.42] my-[16px]"></div>
+                            <p class="text-[#111] text-opacity-[0.72]">
+                                Chet el fuqarolarini “Sehat” klinikasiga tashrif buyurganida O‘zbekiston xududida
+                                ro‘yxatdan o‘tishda qanday yordam va ko‘mak kerak bo‘lsa yordam qiladi.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="zoom-in-down">
+                            <span class="text-[#023462] text-opacity-[0.22] text-[28px] mb-[8px]">02</span>
+                            <p class="text-[#171A63] font-medium text-[22px]">Chet davlatidan tashrif buyurganbemorlar
+                                qanday xujjatlari kerak bo‘ladi,ro‘yxatdan o‘tishda klinika yordam qiladimi?</p>
+                            <div class="w-[100px] h-[2px] bg-[#F03D69] bg-opacity-[0.42] my-[16px]"></div>
+                            <p class="text-[#111] text-opacity-[0.72]">
+                                Chet el fuqarolarini “Sehat” klinikasiga tashrif buyurganida O‘zbekiston xududida
+                                ro‘yxatdan o‘tishda qanday yordam va ko‘mak kerak bo‘lsa yordam qiladi.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="zoom-in-down">
+                            <span class="text-[#023462] text-opacity-[0.22] text-[28px] mb-[8px]">03</span>
+                            <p class="text-[#171A63] font-medium text-[22px]">Chet davlatidan tashrif buyurganbemorlar
+                                qanday xujjatlari kerak bo‘ladi,ro‘yxatdan o‘tishda klinika yordam qiladimi?</p>
+                            <div class="w-[100px] h-[2px] bg-[#F03D69] bg-opacity-[0.42] my-[16px]"></div>
+                            <p class="text-[#111] text-opacity-[0.72]">
+                                Chet el fuqarolarini “Sehat” klinikasiga tashrif buyurganida O‘zbekiston xududida
+                                ro‘yxatdan o‘tishda qanday yordam va ko‘mak kerak bo‘lsa yordam qiladi.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="zoom-in-down">
+                            <span class="text-[#023462] text-opacity-[0.22] text-[28px] mb-[8px]">04</span>
+                            <p class="text-[#171A63] font-medium text-[22px]">Chet davlatidan tashrif buyurganbemorlar
+                                qanday xujjatlari kerak bo‘ladi,ro‘yxatdan o‘tishda klinika yordam qiladimi?</p>
+                            <div class="w-[100px] h-[2px] bg-[#F03D69] bg-opacity-[0.42] my-[16px]"></div>
+                            <p class="text-[#111] text-opacity-[0.72]">
+                                Chet el fuqarolarini “Sehat” klinikasiga tashrif buyurganida O‘zbekiston xududida
+                                ro‘yxatdan o‘tishda qanday yordam va ko‘mak kerak bo‘lsa yordam qiladi.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-aos="zoom-in-down">
+                            <span class="text-[#023462] text-opacity-[0.22] text-[28px] mb-[8px]">05</span>
+                            <p class="text-[#171A63] font-medium text-[22px]">Chet davlatidan tashrif buyurganbemorlar
+                                qanday xujjatlari kerak bo‘ladi,ro‘yxatdan o‘tishda klinika yordam qiladimi?</p>
+                            <div class="w-[100px] h-[2px] bg-[#F03D69] bg-opacity-[0.42] my-[16px]"></div>
+                            <p class="text-[#111] text-opacity-[0.72]">
+                                Chet el fuqarolarini “Sehat” klinikasiga tashrif buyurganida O‘zbekiston xududida
+                                ro‘yxatdan o‘tishda qanday yordam va ko‘mak kerak bo‘lsa yordam qiladi.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section main__blog-section overflow-hidden">
+        <div class="uk-container uk-container-large">
+            <h2 class="title-2" data-aos="fade-up-right">Blog</h2>
+            <p class="paragraph lg:w-[580px] mt-[8px]" data-aos="fade-up-right">Ban elimi sana vadiim duramadim yine
+                galdim bu da benim dardim
+                san seeev diye yinemi sevayim Biznesini endigina boshlagan,</p>
+        </div>
+        <div class="videos">
+            <div uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                    <ul
+                        class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-4@m uk-margin-large-top uk-grid">
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-1.png" alt="">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" loading="lazy" alt="blog img">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-2.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-3.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-1.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-2.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-1.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                        <li data-aos="zoom-in">
+                            <div>
+                                <div uk-lightbox>
+                                    <a class="blog-img uk-button uk-button-default uk-padding-remove relative group"
+                                        href="https://youtu.be/gsNUS7PaAP0" data-caption="YouTube"
+                                        data-attrs="width: 1280; height: 720;">
+                                        <img class="w-full" src="../assets/images/main/blog-1.png" loading="lazy"
+                                            alt="blog img">
+                                        <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 group-hover:scale-110 duration-200"
+                                            src="../assets/images/icons/video-circle.svg" alt="">
+                                    </a>
+                                </div>
+                                <h3 class="text-[#171A63] font-medium text-[20px] mt-[15px]">Bu yerga videoni nomi
+                                    yoziladi</h3>
+                                <p class="text-[13px] text-[#171A63] mt-[10px]">
+                                    Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-[#171A63]">
+        <div class="uk-container uk-container-large">
+            <div class="text-white uk-grid-collapse items-center uk-child-width-1-2@l" uk-grid>
+                <div>
+                    <div
+                        uk-scrollspy="target: .animation; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+                        <h2 class="title-2 text-white animation">
+                            Yordam kerak bolsa <span class="text-[#F03D69]">hoziroq murojat qiling!!!</span>
+                        </h2>
+                        <p class="text-white text-opacity-[0.72] md:w-[85%] mt-[12px] animation">
+                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                            Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
+                        </p>
+                        <div
+                            class="mt-[42px] md:flex justify-between items-center w-full space-y-[20px] md:space-y-0 md:space-x-[20px] lg:space-x-[22px]">
+                            <div class="form-input-anim">
+                                <input type="text" name="text" autocomplete="off" required
+                                    class="w-full bg-transparent focus:outline-none text-[#fff] placeholder:text-[#fff] placeholder:text-opacity-[0.72] border border-[#fff]/50 focus:border-[#fff]/100 rounded-[12px] py-[14px] px-[20px]">
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                        Ismingiz
+                                    </span>
+                                </label>
+                            </div>
+                            <div
+                                class="w-full sm:flex items-center space-y-[30px] sm:space-y-0 space-x-0 sm:space-x-[20px] animLeft uk-scrollspy-inview animate__animated animate__lightSpeedInLeft">
+                                <div class="form-input-anim">
+                                    <input type="text" name="text" autocomplete="off" required
+                                        class="w-full bg-transparent focus:outline-none text-[#fff] placeholder:text-[#fff] placeholder:text-opacity-[0.72] border border-[#fff]/50 focus:border-[#fff]/100 rounded-[12px] py-[14px] px-[20px]">
+                                    <label for="text" class="label-name">
+                                        <span class="content-name">
+                                            +998 9X XXX XX XX
+                                        </span>
+                                    </label>
+                                </div>
+                                <button class="group flex items-center space-x-[30px] group">
+                                    <div
+                                        class="w-[40px] h-[40px] bg-[#F03D69] group-hover:scale-110 duration-150 rounded-[6px] rotate-45 flex items-center justify-center">
+                                        <img class="-rotate-45 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+                                            src="../assets/images/icons/arrow.svg" alt="">
+                                    </div>
+                                    <span>Yuborish</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-white text-opacity-[0.72] mt-[32px] md:w-[80%] uk-visible@s">
+                            Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                            Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-visible@l">
+                    <img src="../assets/images/main/form-img.png" loading="lazy" alt="img" data-aos="zoom-out-left">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="uk-section mt-[110px] bg-[#F4F4F4] uk-padding-remove-bottom"
+        uk-scrollspy="target: .animation; cls: uk-animation-slide-top-medium; repeat: true; delay: 100">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid-large uk-child-width-1-4@l uk-child-width-1-2 lg:justify-between" uk-grid>
+                <div class="w-full sm:w-[200px] flex sm:inline-block justify-center">
+                    <a href="index.html" class="inline-block">
+                        <img src="../assets/images/icons/logo.svg" loading="lazy" alt="logo">
+                    </a>
+                </div>
+                <div class="w-full md:w-[480px]">
+                    <h4 class="text-[#2222226B] text-lg font-medium mb-[8px]">Joylashuv</h4>
+                    <p class="text-[#171A63] text-[26px] font-medium animation">Andijon shaxar axmad donish
+                        kuchasi 6- manzil
+                    </p>
+                    <p class="paragraph font-[300] uk-margin-medium-top animation">
+                        Ban elimi sana vadiim duramadim yine galdim bu da benim dardim san seeev diye yinemi sevayim
+                        Biznesini endigina boshlagan, boshqaruv va sotuv bilan muammo
+                    </p>
+                </div>
+                <div class="w-1/2 sm:w-[200px]">
+                    <h4 class="text-[#2222226B] text-lg font-medium mb-[8px]">Sahifalar</h4>
+                    <ul class="space-y-[12px]">
+                        <li class="animation">
+                            <a href="index.html" class="text-[#171A63] font-medium">
+                                Bosh sahifa
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="about.html" class="text-[#171A63] font-medium">
+                                Biz haqimizda
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="service.html" class="text-[#171A63] font-medium">
+                                Xizmatlarimiz
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="gallery.html" class="text-[#171A63] font-medium">
+                                Galereya
+                            </a>
+                        </li>
+                        <li class="animation">
+                            <a href="contact.html" class="text-[#171A63] font-medium">
+                                Kontakt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[#2222226B] text-base sm:text-lg font-medium mb-[8px]">Klinika raqami</h4>
+                    <a href="#" class="text-base sm:text-2xl font-[600] text-[#171A63] animation">+998 55 500 77 11</a>
+                    <h4 class="text-[#2222226B] text-base sm:text-lg font-medium mb-[8px] mt-[15px] sm:mt-[30px]">
+                        Qabulhona raqami</h4>
+                    <a href="#" class="text-base sm:text-2xl font-[600] text-[#171A63] animation">+998 55 555 77 11</a>
+                    <h4 class="text-[#2222226B] text-base sm:text-lg font-medium mb-[8px] mt-[15px] sm:mt-[30px]">Social
+                        media</h4>
+                    <ul class="mt-[17px] flex items-center space-x-[20px] sm:space-x-[30px]">
+                        <li>
+                            <a href="#"
+                                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border border-[#171A63] rounded-[6px] rotate-45 flex items-center justify-center group">
+                                <img class="-rotate-45 group-hover:scale-125 duration-200" loading="lazy"
+                                    src="../assets/images/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border border-[#171A63] rounded-[6px] rotate-45 flex items-center justify-center group">
+                                <img class="-rotate-45 group-hover:scale-125 duration-200" loading="lazy"
+                                    src="../assets/images/icons/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] border border-[#171A63] rounded-[6px] rotate-45 flex items-center justify-center group">
+                                <img class="-rotate-45 group-hover:scale-125 duration-200" loading="lazy"
+                                    src="../assets/images/icons/instagram.svg" alt="insta">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-[#F03D69] border-opacity-[0.12] uk-margin-large-top">
+            <div
+                class="uk-container uk-container-large flex flex-col sm:flex-row items-center sm:justify-between py-[30px]">
+                <p>© Sehatclinic barcha huqular himoyalangan</p>
+                <a href="https://mount.uz" class="mt-[12px] sm:mt-0">
+                    <img src="../assets/images/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="overlay" class="fixed top-0 left-0 w-full h-full z-[999999999]" style="display: none;">
+        <div class="bg-[#171A63] w-full h-full flex items-center flex-col justify-center">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+
+    <script src="../assets/js/uikit-icons.min.js"></script>
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/store.js"></script>
+
+</body>
+
+</html>
